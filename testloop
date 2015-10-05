@@ -1,0 +1,7 @@
+addi $t9, $zero, 0 
+addi $t8, $zero, 0 
+start: 
+beq $t8, 100, endfor
+addi $t8, $t8, 1 
+add $t9, $t8, $t9 
+j start 

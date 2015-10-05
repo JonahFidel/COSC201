@@ -1,0 +1,130 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f30\froman\fcharset238\fprq2 Times New Roman CE;}{\f31\froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f33\froman\fcharset161\fprq2 Times New Roman Greek;}{\f34\froman\fcharset162\fprq2 Times New Roman Tur;}{\f35\froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f36\froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\f37\froman\fcharset186\fprq2 Times New Roman Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;
+\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{
+\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 Normal;}{\*\cs10 \additive Default Paragraph Font;}}{\info{\title For the ALU the operation controls are as follows:}
+{\author Chris}{\operator Chris}{\creatim\yr2013\mo10\dy30\hr15\min51}{\revtim\yr2014\mo4\dy5\hr11\min53}{\version14}{\edmins135}{\nofpages3}{\nofwords834}{\nofchars4757}{\*\company Colgate University}{\nofcharsws0}{\vern8247}}
+\margl1440\margr1440\margt1152\margb1152 \widowctrl\ftnbj\aenddoc\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\hyphcaps0\formshade\horzdoc\dgmargin\dghspace180\dgvspace180\dghorigin1440\dgvorigin1152\dghshow1\dgvshow1
+\jexpand\viewkind1\viewscale100\pgbrdrhead\pgbrdrfoot\splytwnine\ftnlytwnine\htmautsp\nolnhtadjtbl\useltbaln\alntblind\lytcalctblwd\lyttblrtgr\lnbrkrule \fet0\sectd \linex0\endnhere\sectlinegrid360\sectdefaultcl {\*\pnseclvl1
+\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5
+\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang
+{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+Description of circuit files for Lab 7 \endash  Single Cycle Data Path
+\par 
+\par The CPUComponents.circ file contains the following incomplete subcircuits which you will need to complete:
+\par 
+\par }{\ul BranchAddress}{ \endash  Computation of the address to branch to. Given the branch offset, this component does the shift by two (addresses are always on words), then adds the current PC+4. The input pins on the left, from the top:
+\par }\pard \ql \li720\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0 {PC+4 \endash  32 bits (PC for current instruction plus 4)
+\par Branch offset \endash  32 bits
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {The output pin on the right is the branch address
+\par 
+\par }{\ul JumpAddress}{ \endash  Computes the address to jump to for an unconditional jump. The inputs on the left from the top:
+\par \tab PC+4 \endash  32 bits (PC for current instruction plus 4)
+\par }\pard \ql \li720\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0 {Jump address \endash  26 bits
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {The output pin on the right is the jump address}{\fs20\lang1024\langfe1024\noproof  
+{\shp{\*\shpinst\shpleft0\shptop264\shpright9180\shpbottom264\shpfhdr0\shpbxcolumn\shpbxignore\shpbypara\shpbyignore\shpwr3\shpwrk0\shpfblwtxt0\shpz1\shplid1026{\sp{\sn shapeType}{\sv 20}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn shapePath}{\sv 4}}{\sp{\sn fFillOK}{\sv 0}}{\sp{\sn fFilled}{\sv 0}}{\sp{\sn lineWidth}{\sv 19050}}{\sp{\sn fArrowheadsOK}{\sv 1}}{\sp{\sn fLine}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}{\sp{\sn fLayoutInCell}{\sv 1}}}{\shprslt{\*\do\dobxcolumn\dobypara\dodhgt8193\dpline\dpptx0\dppty0\dpptx9180\dppty0\dpx0\dpy264\dpxsize9180\dpysize0\dplinew30\dplinecor0\dplinecog0\dplinecob0}}}}{
+\par 
+\par The CPUComponents.circ file contains the following completed subcircuits:
+\par }{\ul 
+\par Inst Mem Interface}{ \endash  accesses the instruction memory. The instruction memory is shown below it in the diagram. Connections, each 32 bits:
+\par }\pard \ql \li720\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0 {Instruction Address \endash  on the left
+\par Instruction \endash  on the right
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {
+\par }{\ul InstructionDecode}{ \endash  splits out the instruction fields from the instruction. The field connections on the right of this component are as follows from top to bottom:
+\par }\pard \ql \li720\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0 {Opcode \endash  6 bitd
+\par Rs \endash  5 bits
+\par Rt \endash  5 bits
+\par Rd \endash  5 bits
+\par ShAmt \endash  5 bits
+\par Function code \endash  6 bits
+\par Immediate \endash  16 bits
+\par Jump Address \endash  26 bits
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {\ul Registers}{ \endash  a full bank of 32 32-bit registers. The pins on the left side are, from the top:
+\par }\pard \ql \li720\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0 {Select Read Register 1 \endash  5 bits
+\par Select Read Register 2 \endash  5 bits
+\par Select Write Register \endash  5 bits
+\par Data to Write \endash  32 bits
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {The control pins on the bottom are one bits each, from left to right:
+\par }\pard \ql \li720\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0 {Write Enable
+\par Clock
+\par Reset \endash  sets all registers to zero
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {The output pins on the right side, each 32 bits, top to bottom:
+\par }\pard \ql \li720\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0 {Read Register 1
+\par Read Register 2
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {
+\par }{\ul ALU}{ \endash  creates a MIPS ALU circuit (somewhat different from the one defined in the text). The pins on the left, each 32 bits:
+\par }\pard \ql \li720\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0 {Input A
+\par Input B
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {The control pin on the bottom takes the 4-bit ALU control signal.
+\par The output pins on the right, from top to bottom:
+\par }\pard \ql \li720\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0 {Zero \endash  1 bit
+\par Result \endash  32 bits
+\par Overflow \endash  1 bit
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {
+\par }{\ul Data Mem Interface}{ \endash  provides an interface for accessing the data memory. The pins on the left, from the top:
+\par }\pard \ql \li720\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0 {Data Address \endash  32 bits, for either write to memory or reds from memory
+\par Data to Memory \endash  32 bits, data to be written to the memory
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {The output pin on the right side of this component is the 32 bit data value read from memory
+\par The leftmost control pin on the bottom of this component is the 1 bit clock signal. The other pins on the bottom connect to the Logi-Sim memory component, shown below the component in the circuit.
+\par }{\ul 
+\par Sign Extend}{ \endash  Extends a 16-bit twos-complement value to a 32 bit value. The 16 bits come in on the left and the 32 bits go out on the right.
+\par 
+\par For the }{\ul ALU}{ the operation controls are as follows:
+\par 
+\par \sect }\sectd \margtsxn1440\margbsxn1440\sbknone\linex0\cols2\endnhere\colno1\colw4320\colsr720\colno2\colw4320\sectlinegrid360\sectdefaultcl \pard\plain \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {and\tab 0000
+\par or\tab 0001
+\par add\tab 0010
+\par sub\tab 0110
+\par slt\tab 0111
+\par nor\tab 1100
+\par Note: the corresponding immediate operations would have the same controls here, but the inputs to the ALU would be different. For example, the addi, lw and s
+w instructions would use the add control here, with immediate input and the result being used as the memory address for lw and sw. \sect }\sectd \margtsxn1440\margbsxn1440\sbknone\linex0\endnhere\sectlinegrid360\sectdefaultcl \pard\plain 
+\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\par }{\fs20\lang1024\langfe1024\noproof {\shp{\*\shpinst\shpleft0\shptop85\shpright9180\shpbottom85\shpfhdr0\shpbxcolumn\shpbxignore\shpbypara\shpbyignore\shpwr3\shpwrk0\shpfblwtxt0\shpz0\shplid1027
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}{\sp{\sn shapePath}{\sv 4}}{\sp{\sn fFillOK}{\sv 0}}{\sp{\sn fFilled}{\sv 0}}{\sp{\sn lineWidth}{\sv 19050}}{\sp{\sn fArrowheadsOK}{\sv 1}}{\sp{\sn fLine}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}{\sp{\sn fLayoutInCell}{\sv 1}}}{\shprslt{\*\do\dobxcolumn\dobypara\dodhgt8192\dpline\dpptx0\dppty0\dpptx9180\dppty0\dpx0\dpy85\dpxsize9180\dpysize0\dplinew30\dplinecor0\dplinecog0\dplinecob0}}}}{
+\par The MiscComponents.circ file contains the following subcircuits that are used to build the CPUComponents.circ subcircuits:
+\par 
+\par }{\ul GetSign}{ \endash  send the sign bit of a 32-bit input to the down output and passes the 32-bit value to the right output.
+\par }{\ul SetLSB}{ \endash  takes a 32-bit input and sets its least significant bit to 1, leaving the other bits as is.
+\par }{\ul Zero}{ \endash  takes a 32-bit input and outputs a single bit as 1 if the value is zero, 0 otherwise.
+\par }{\ul Overflow}{ \endash  Takes the a, b and sum high order bits and sets the output bit to 1 if there is overflow from an arithmetic operation in the ALU (two operation bits at 10 indicating an add op)
+\par }{\ul Registers4}{ \endash  creates 4 32-bit registers with 2-bit control for selecting read-1, read-2 and write.
+\par }{\ul Registers4Z}{ \endash  same as above except the zero register is hard-wired to be zero, cannot be written. 
+\par }{\ul WordAddress}{ \endash  Pulls an 8-bit word address from a 32-bit byte address \endash  our data path uses memory addressed with 8-bits for simplicity.\page 
+The control.circ file supplies the control and the ALUcontrol circuits to the datapath.circ file. 
+\par 
+\par Subcircuits:
+\par 
+\par }{\ul Control}{ \endash  input is the six-bit opcode from the instruction and output are the following control lines: 
+\par \tab Branch \endash  1 for branch instruction, 0 otherwise
+\par \tab Jump \endash  1 for jump instruction, 0 otherwise
+\par \tab MemToReg \endash  1 if write value for register is from memory, 0 otherwise
+\par \tab MemRead \endash  1 for a memory read (for lw), 0 otherwise
+\par \tab MemWrite \endash  1 if if memory is to be written, 0 otherwise
+\par \tab ALUSrc \endash  indicates source for ALU B-operand, 0 for the rt register and 1 for the 
+\par }\pard \ql \fi720\li1440\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin1440\itap0 {sign-shifted immediate
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {\tab ALUOp \endash  2 bits indicate the ALU operation for ALUControl
+\par \tab \tab 00 for addi, lw or sw instructions
+\par \tab \tab 01 for branch instructions
+\par \tab \tab 10 for R-type instructions
+\par \tab \tab 11 for ori\tab 
+\par \tab RegWrite \endash  1 if a register is to be written, 0 otherwise
+\par \tab RegDst \endash  determines whether destination register is from rt (0) or rd (1)
+\par 
+\par }{\ul control}{_0 and }{\ul control\-}{_1 \endash  subcircuits for building the control circuit
+\par 
+\par }{\ul ALUcontrol}{ \endash  input is the six-bit function code and the two-bit ALUOp from control, output is the 4-bit control for the ALU from the cpu32.circ file.
+\par 
+\par ALUcontrol_0 \endash  subcircuit for implementing ALUcontrol circuit
+\par 
+\par }{\ul Fake_Control}{ and }{\ul Fake_ALUcontrol}{ \endash  subcircuits that can be used in place of the control and ALUcontrol circuits for testing. If these are placed in the locations for control and ALUcontrol in the datapath circuit, then a ten-bit i
+nput can be placed on the top of the Fake_Control and a four-bit input on the top of the Fake_ALUcontrol, so the control values can be set by the user for testing purposes.
+\par 
+\par 
+\par The SingleCycleCPU.circ file contains an incomplete implementation of the simplified MIPS single cycle processor described in the book. 
+\par }}

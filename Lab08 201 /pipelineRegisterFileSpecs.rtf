@@ -1,0 +1,52 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf200
+{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;}
+{\info
+{\title For the ALU the operation controls are as follows:}
+{\author Chris}
+{\*\company Colgate University}}\margl1440\margr1440\vieww12240\viewh13180\viewkind1
+\deftab720
+\pard\pardeftab720\ri0
+
+\f0\fs24 \cf0 Description of the pipelineRegister circuit files for Labs 8 \'96Pipeline CPU\
+\
+The pipeline registers are designated by a number indicating which stages they bridge and a descriptor indicating the information stored at that stage.\
+\
+1 indicates the IF/ID register\
+2 indicates the ID/EX registers\
+3 indicates the EX/Mem registers\
+4 indicate the Mem/WB registers\
+\
+PC indicates the address information needed to compute branch and jump PC addresses\
+Ctrl indicate control lines\
+DP indicates the main data-path\
+Fn indicates the funct code\
+Reg indicates the destination register for write-back\
+\
+ The initial file is pipelineRegisters-start.circ. It includes the following completed pipeline registers which are used in PiplineCPU-start.circ.\
+\
+PipeReg1  (only one pipeline register needed here)\
+\
+PipeReg2PC (stores PC+4 and jump address from instruction)\
+PipeReg2Ctrl (stores all control values)\
+PipeReg2DP (stores data path values from A-reg, B-reg, and extended immediate)\
+PipeReg2FnReg (stores func code and possible destination registers \'96 rt, rd)\
+\
+\
+You need to complete this file by creating the following pipeline registers.\
+\
+PipeReg3PC (stores computed branch and jump addresses)\
+PipeReg3Ctrl (stores control values that need to pass to the Mem and WB stages)\
+PipeReg3DP (store the data values that pass from EX to Mem stages, namely zero line from ALU, ALU result, value from rt for possible sw instruction)\
+\
+1 bit zero line \
+32 bit ALU result \
+5 bit rt value (need to know if sw?) \
+\
+PipeReg3-4Reg (stores destination register number)  Two copies of this register are used, one in the EX/Mem transfer and one in the Mem/WB transfer.\
+\
+PipeReg4Ctrl (stores control values that need to pass to the WB stage)\
+PipeReg4DP (stores data values from ALU and memory)\
+\
+\
+}
